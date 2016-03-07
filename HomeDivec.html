@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <!--Agregamos Meta Viewport=lo que se ve de la pagina/device-width /initial-scale fija el zoom inicial-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+  <title>::DivecFest 2016::</title>
+  <!--Añadimos un icono css-->
+  <link rel="shortcut icon" href="img/q.ico">
+
+  <!--Agregamos Bootstrap css-->
+  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+
+</head>
+<body>
+  <!--header>(a>h1+span+span)+(nav>a*6)+button+img-->
+  <header>
+    <a href="">
+      <h1>Divecfest 2016</h1>
+      <span>|</span>
+      <span>Casita</span></a>
+      <nav>
+        <a href="">Conferencia</a>
+        <a href="">Talleres</a>
+        <a href="">Eventos Culturales</a>
+        <a href="">Organizacion</a>
+        <a href="">Registro Actividades</a>
+        <!--Inicio de : div>(button>span)+(ul>li*6>a)-->
+        <div>
+          <button>
+            Registro Actividades
+            <span>Fl</span>
+          </button>
+          <ul>
+            <li><a href="#">Piano</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Concurso de Talentos</a></li>
+            <li><a href="#">Fanfiction</a></li>
+            <li><a href="#">Arte Digital</a></li>
+            <li><a href="#">Lan Party</a></li>
+          </ul>
+        </div>
+        <!--Fin de : div>(button>span)+(ul>li*6>a)-->
+        <a href="">Registro</a>
+      </nav>
+      <button>Inicio</button>
+      <img src="img/Banner.png" alt="">
+    </header>
+    <!--fin de : header>(a>h1+span+span)+(nav>a*6)+button+img-->
+
+    <!--section>h2+p+img+aside-->
+    <section>
+      <h2>Bienvenidos a Divecfest 2016</h2>
+      <p>DivecFest es el festival científico, cultural y recreativo de la División de Electrónica y Computación del CUCEI, dirigido a estudiantes de Licenciatura e Ingeniería en Informática, Ingeniería en Computación, Ingeniería Biomédica e Ingeniería en Comunicaciones y Electrónica, así como a la comunidad estudiantil y a la sociedad en general. Este festival tiene como objetivo mostrar lo más nuevo en el mundo de la electrónica, la computación y las tecnologías de la información y la comunicación. Además, incluye actividades destinadas a la recreación y la apreciación de las artes y la literatura.</p>
+      <img src="img/divecfest2016-1.jpg" alt="">
+      <aside>
+        <h3>¿Por que estar presente en divec?</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio libero sequi molestiae animi ea tenetur quaerat inventore quisquam deleniti nemo id distinctio nam quod, architecto nisi nesciunt, dolorum odio deserunt.
+        </p>
+      </aside>
+    </section>
+    <!--Fin de : section>h2+p+img+aside-->
+
+    <!--div>((audio>source)+(button*5>img)+span) -->
+    <div>
+      <audio id="audio1"> <!--autoplay controls loop muted-->
+        <source src="audio/artic.mp3" type="audio/mp3">
+      </audio>
+      <button onclick="document.getElementById('audio1').play()">Reproducir</button>
+      <button onclick="document.getElementById('audio1').pause()">Pausar</button>
+      <button onclick="document.getElementById('audio1').pause();document.getElementById('audio1').currentTime=0;">Parar</button>
+      <button onclick="document.getElementById('audio1').volume+=0.1;">Vol++</button>
+      <button onclick="document.getElementById('audio1').volume-=0.1;">Vol--</button>
+      <span>Artic Monkeys.mp3</span>
+    </div>
+    <!--fin de : div>(audio+(button*5>img)+span) -->
+
+
+    <!--footer-->
+    <footer>
+         Copyright © 2016 <var>Alexis Jimenez</var> | División de Electrónica y Computación | Centro Universitario de Ciencias Exactas e Ingenierías |Universidad de Guadalajara
+    </footer>
+    <!--Fin de : footer-->
+
+    <!--Agregamos Jquery js-->
+    <!--<script src="js/jquery-2.2.1.min.js"></script>-->
+    <!--Agregamos Bootstrap js-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Registro Actividades
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Piano</a></li>
+    <li><a href="#">Proyectos</a></li>
+    <li><a href="#">Concurso de Talentos</a></li>
+    <li><a href="#">Fanfiction</a></li>
+    <li><a href="#">Arte Digital</a></li>
+    <li><a href="#">Lan Party</a></li>
+  </ul>
+</div>
+data-toggle="dropdown"  y la class del div deben ser el mismo
+-->
