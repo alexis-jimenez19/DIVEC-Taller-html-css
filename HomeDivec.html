@@ -3,94 +3,146 @@
 <head>
   <meta charset="UTF-8">
 
-  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!--Agregamos Meta Viewport=lo que se ve de la pagina/device-width /initial-scale fija el zoom inicial-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>::DivecFest 2016::</title>
   <!--Añadimos un icono css-->
   <link rel="shortcut icon" href="img/q.ico">
-
+  <!--Añadimos nuestro estilillo.css-->
+  <link rel="stylesheet" href="css/estilillo.css">
   <!--Agregamos Bootstrap css-->
-  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
 <body>
-  <!--header>(a>h1+span+span)+(nav>a*6)+button+img-->
+  <!--header>(nav>(a>h1+span+span)+(a*6)+button)+img-->
   <header>
-    <a href="">
-      <h1>Divecfest 2016</h1>
-      <span>|</span>
-      <span>Casita</span></a>
-      <nav>
-        <a href="">Conferencia</a>
-        <a href="">Talleres</a>
-        <a href="">Eventos Culturales</a>
-        <a href="">Organizacion</a>
-        <a href="">Registro Actividades</a>
-        <!--Inicio de : div>(button>span)+(ul>li*6>a)-->
-        <div>
-          <button>
-            Registro Actividades
-            <span>Fl</span>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+        <div class="navbar-header" >
+          <!--Boton para Responsive-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fijateEnEsteId" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <ul>
-            <li><a href="#">Piano</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Concurso de Talentos</a></li>
-            <li><a href="#">Fanfiction</a></li>
-            <li><a href="#">Arte Digital</a></li>
-            <li><a href="#">Lan Party</a></li>
-          </ul>
+          <!--Fin de Boton Responsive-->
+          <!--Simbolo de marca-->
+          <a class="navbar-brand " href="">
+            Divecfest 2016
+            |
+          Casita
+          </a>
         </div>
-        <!--Fin de : div>(button>span)+(ul>li*6>a)-->
-        <a href="">Registro</a>
-      </nav>
-      <button>Inicio</button>
-      <img src="img/Banner.png" alt="">
-    </header>
-    <!--fin de : header>(a>h1+span+span)+(nav>a*6)+button+img-->
+          <!--fin de simbolo de marca-->
+          <!--Comienzo de Menu de Navegacion-->
+          <div class="collapse navbar-collapse" id="fijateEnEsteId">
+            <ul class="nav navbar-nav">
+              <li> <a href="">Conferencia</a></li>
+              <li> <a href="">Talleres</a></li>
+              <li> <a href="">Eventos Culturales</a></li>
+              <li> <a href="">Organizacion</a></li>
+              <li> <a href="">Registro Actividades</a></li>
+
+              <!--Inicio de : div>(a>span)+(ul>li*6>a)-->
+              <li class="dropdown">
+                <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Registro Actividades
+                  <span>Fl</span>
+                </a>
+
+                <ul class="dropdown-menu" >
+                  <li><a href="#">Piano</a></li>
+                  <li><a href="#">Proyectos</a></li>
+                  <li><a href="#">Concurso de Talentos</a></li>
+                  <li><a href="#">Fanfiction</a></li>
+                  <li><a href="#">Arte Digital</a></li>
+                  <li><a href="#">Lan Party</a></li>
+                </ul>
+              </li>
+              <li><a href="">Registro</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <button class="btn btn-default form-control" id="btn-inicio">Inicio</button>
+            </ul>
+
+          </div>
+          <!--Fin de Menu de Navegacion-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <img class="img-responsive img-rounded" src="img/Banner.png" alt="" style="display:block;margin:0 auto;-moz-box-shadow: 10px 10px 42px #000000;
+      -webkit-box-shadow: 10px 10px 42px #000000;
+      box-shadow: 10px 10px 42px #000000;" width="70%" height="300px">
+    </div>
+
+  </header>
+      <!--fin de : header>(a>h1+span+span)+(nav>a*6)+button+img-->
 
     <!--section>h2+p+img+aside-->
     <section>
-      <h2>Bienvenidos a Divecfest 2016</h2>
-      <p>DivecFest es el festival científico, cultural y recreativo de la División de Electrónica y Computación del CUCEI, dirigido a estudiantes de Licenciatura e Ingeniería en Informática, Ingeniería en Computación, Ingeniería Biomédica e Ingeniería en Comunicaciones y Electrónica, así como a la comunidad estudiantil y a la sociedad en general. Este festival tiene como objetivo mostrar lo más nuevo en el mundo de la electrónica, la computación y las tecnologías de la información y la comunicación. Además, incluye actividades destinadas a la recreación y la apreciación de las artes y la literatura.</p>
-      <img src="img/divecfest2016-1.jpg" alt="">
-      <aside>
-        <h3>¿Por que estar presente en divec?</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio libero sequi molestiae animi ea tenetur quaerat inventore quisquam deleniti nemo id distinctio nam quod, architecto nisi nesciunt, dolorum odio deserunt.
-        </p>
-      </aside>
+      <div class="container text-center">
+        <div class="col-md-8 main-info">
+          <h2>Bienvenidos a Divecfest 2016</h2>
+          <p>DivecFest es el festival científico, cultural y recreativo de la División de Electrónica y Computación del CUCEI, dirigido a estudiantes de Licenciatura e Ingeniería en Informática, Ingeniería en Computación, Ingeniería Biomédica e Ingeniería en Comunicaciones y Electrónica, así como a la comunidad estudiantil y a la sociedad en general. Este festival tiene como objetivo mostrar lo más nuevo en el mundo de la electrónica, la computación y las tecnologías de la información y la comunicación. Además, incluye actividades destinadas a la recreación y la apreciación de las artes y la literatura.</p>
+          <img class="img-responsive"src="img/divecfest2016-1.jpg" alt="" width="300px" height="500px">
+        </div>
+
+        <div class="col-md-4">
+          <aside class="aside-margin-top">
+            <h3>
+              <b>¿Por que estar presente en divec?</b>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio libero sequi molestiae animi ea tenetur quaerat inventore quisquam deleniti nemo id distinctio nam quod, architecto nisi nesciunt, dolorum odio deserunt.
+            </p>
+          </aside>
+        </div>
+
+      </div>
+
     </section>
     <!--Fin de : section>h2+p+img+aside-->
 
     <!--div>((audio>source)+(button*5>img)+span) -->
-    <div>
-      <audio id="audio1"> <!--autoplay controls loop muted-->
-        <source src="audio/artic.mp3" type="audio/mp3">
-      </audio>
-      <button onclick="document.getElementById('audio1').play()">Reproducir</button>
-      <button onclick="document.getElementById('audio1').pause()">Pausar</button>
-      <button onclick="document.getElementById('audio1').pause();document.getElementById('audio1').currentTime=0;">Parar</button>
-      <button onclick="document.getElementById('audio1').volume+=0.1;">Vol++</button>
-      <button onclick="document.getElementById('audio1').volume-=0.1;">Vol--</button>
-      <span>Artic Monkeys.mp3</span>
+    <div class="bg-info ">
+      <div class="audio-controls">
+        <audio id="audio1"> <!--autoplay controls loop muted-->
+          <source src="audio/artic.mp3" type="audio/mp3">
+        </audio>
+        <button class="btn btn-default" onclick="document.getElementById('audio1').play()">Reproducir</button>
+        <button class="btn btn-default" onclick="document.getElementById('audio1').pause()">Pausar</button>
+        <button class="btn btn-default" onclick="document.getElementById('audio1').pause();document.getElementById('audio1').currentTime=0;">Parar</button>
+        <button class="btn btn-default" onclick="document.getElementById('audio1').volume+=0.1;">Vol++</button>
+        <button class="btn btn-default" onclick="document.getElementById('audio1').volume-=0.1;">Vol--</button>
+        <span>Artic Monkeys.mp3</span>
+      </div>
+
     </div>
     <!--fin de : div>(audio+(button*5>img)+span) -->
 
 
     <!--footer-->
-    <footer>
-         Copyright © 2016 <var>Alexis Jimenez</var> | División de Electrónica y Computación | Centro Universitario de Ciencias Exactas e Ingenierías |Universidad de Guadalajara
+    <footer class="bg-default text-center">
+         <strong>
+        Copyright © 2016 <var>Alexis Jimenez</var> | División de Electrónica y Computación | Centro Universitario de Ciencias Exactas e Ingenierías |Universidad de Guadalajara
+         </strong>
+
     </footer>
     <!--Fin de : footer-->
 
     <!--Agregamos Jquery js-->
-    <!--<script src="js/jquery-2.2.1.min.js"></script>-->
+    <script src="js/jquery-2.2.1.min.js"></script>
     <!--Agregamos Bootstrap js-->
-    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
   </body>
   </html>
 
